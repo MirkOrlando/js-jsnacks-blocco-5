@@ -8,10 +8,14 @@ e la ritorni girata
 //const word = "Ciao";
 //console.log(wordReversed);
 //console.log(word.split("").reverse().join(""));
+const word = "Ciao";
+const wordReversed = reverseString(word);
+console.log(wordReversed);
 
-const wordToReverse = reverseString("Ciao");
-console.log(wordToReverse);
-
-function reverseString(word) {
-  word.split("").reverse().join("");
+/**
+ * Reverses a string given to param
+ * @param {string} string a string to reverse
+ */
+function reverseString(string) {
+  return string.split("").reverse().join("");
 }
