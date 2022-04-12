@@ -60,16 +60,7 @@ const zucchine = [
 
 let pesoTotale = 0;
 zucchine.forEach((zucchina) => {
+  //console.log(zucchina.peso);
   pesoTotale += zucchina.peso;
 });
 console.log(pesoTotale);
-
-const listaPeso = zucchine.map((zucchina) => zucchina.peso);
-console.log(listaPeso);
-
-function sum(...number) {
-  let pesoTotale = 0;
-  zucchine.forEach((zucchina) => {
-    pesoTotale += zucchina.peso;
-  });
-}
