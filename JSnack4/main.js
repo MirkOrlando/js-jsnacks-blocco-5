@@ -7,13 +7,18 @@ es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 */
 
 const array1 = ["a", "b", "c"];
-const arrai2 = [1, 2, 3];
+const array2 = [1, 2, 3];
 const arraymixed = [];
-array1.forEach((letter) => {
+array1.forEach((letter, i) => {
+  arraymixed.push(letter);
+  arraymixed.push(array2[i]);
+});
+
+/* array1.forEach((letter) => {
   arrai2.forEach((number) => {
     arraymixed.push(letter);
     arraymixed.push(number);
   });
 });
-
+ */
 console.log(arraymixed);
